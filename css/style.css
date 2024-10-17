@@ -57,6 +57,7 @@ table {
 /* rojo: #ee2737 */
 body{
     background-color: #000000;
+    overflow-x: hidden;
 }
 header{
     position: fixed;
@@ -150,8 +151,11 @@ header > div > div:last-child > a:first-child:hover{
     width: 80%;
     margin: auto;
 }
+.introHB{
+    animation: iniHamburguesa .8s ease both;
+}
 .text-back{
-    position: fixed;
+    position: absolute;
     width: 100%;
     color: white;
     font-family: KnockoutBig !important;
@@ -159,7 +163,7 @@ header > div > div:last-child > a:first-child:hover{
     text-transform: uppercase;
     font-weight: 700;
     z-index: -1;
-    animation: movimientoKB 25s linear infinite;
+    animation: movimientoKB 35s linear infinite reverse;
 }
 
 .text-back span{
@@ -169,7 +173,7 @@ header > div > div:last-child > a:first-child:hover{
 }
 
 .text-back:nth-child(2n){
-    animation: movimientoKB 25s linear infinite reverse;
+    animation: movimientoKB 35s linear infinite;
 }
 
 /* ANIMACIONES */
@@ -180,4 +184,13 @@ header > div > div:last-child > a:first-child:hover{
     100%{
         right: 100%;
     }
+}
+
+@keyframes iniHamburguesa {
+	0% {
+		transform: translateY(100vh);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }
