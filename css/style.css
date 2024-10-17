@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: Knockout;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -59,15 +60,31 @@ header{
  display: flex;
  justify-content: space-between;
  align-items: center;
+ width: 95%;
+ margin: auto;
 }
 
 header > div:first-child{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: s;
 }
 .full__logo{
     max-width: 100%;
-    width: 100%;
+    width: 15%;
+    margin: auto;
     fill: white;
+}
+
+header > div:last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+header > div:last-child > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
 }
