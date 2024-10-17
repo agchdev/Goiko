@@ -2,6 +2,10 @@
     font-family: Knockout;
     src: url('../font/Knockout-HTF33-JuniorHeviwt.291432cdf9638ce91c1d.woff2');
 }
+@font-face {
+    font-family: KnockoutBig;
+    src: url('../font/Knockout-HTF73-FullHeviweight.386a901fd564bd4a47c7.woff2');
+}
 
 /* RESET CSS */
 html, body, div, span, applet, object, iframe,
@@ -23,7 +27,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    font-family: Knockout;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -55,8 +58,12 @@ table {
 body{
     background-color: #000000;
 }
-
 header{
+    position: fixed;
+    width: 100%;
+    top: 2.4rem;
+}
+header > div{
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -64,27 +71,113 @@ header{
  margin: auto;
 }
 
-header > div:first-child{
+header > div > div:first-child{
     display: flex;
     align-items: center;
-    justify-content: s;
+    width: 10%;
 }
-.full__logo{
+header > div > div:first-child > svg{
     max-width: 100%;
-    width: 15%;
-    margin: auto;
     fill: white;
 }
-
-header > div:last-child{
+header > div > div:first-child > svg:first-child{
+    max-width: 100%;
+    fill: white;
+    width: 25%;
+}
+header > div > div:first-child > svg:last-child{
+    max-width: 100%;
+    fill: white;
+    width: 20%;
+    margin-left: 2rem;
+}
+header > div > div:last-child{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 25%;
 }
-header > div:last-child > a{
+header > div > div:last-child > a, select{
+    font-family: KnockoutBig;
     text-decoration: none;
     color: white;
-    font-weight: bolder;
-    font-size: 2rem;
+    font-weight: lighter;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 2px solid #ee2737;
+    border-radius: 3rem;
+    padding: .75rem 1rem;
+}
+header > div > div:last-child > select{
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: Knockout;
+}
+header > div > div:last-child > a:first-child{
+    border: 2px solid white;
+}
+header > div > div:last-child > a:nth-child(2){
+   background-color: #ee2737;
+}
+header > div > div:last-child > a:nth-child(2):hover{
+    background-color: #FFB600;
+    border-color: #FFB600;
+    color: black;
+ }
+header > div > div:last-child > a:first-child:hover{
+    background-color: white;
+    color: black;
+}
+
+/* PRIMER SECTION */
+#loop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loop > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loop > div > video{
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+}
+#loop > div > video > source{
+    max-width: 100%;
+    width: 80%;
+    margin: auto;
+}
+.text-back{
+    position: fixed;
+    width: 100%;
+    color: white;
+    font-family: KnockoutBig !important;
+    font-size: 9rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: -1;
+    animation: movimientoKB 25s linear infinite;
+}
+
+.text-back span{
+    color: black;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.text-back:nth-child(2n){
+    animation: movimientoKB 25s linear infinite reverse;
+}
+
+/* ANIMACIONES */
+@keyframes movimientoKB{
+    0%{
+        right: -20%;
+    }
+    100%{
+        right: 100%;
+    }
 }
