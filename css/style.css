@@ -129,6 +129,9 @@ header > div > div:last-child > a:first-child:hover{
     background-color: white;
     color: black;
 }
+.animHover{
+    animation: enlaces .8s ease both;
+}
 
 /* PRIMER SECTION */
 #loop{
@@ -192,5 +195,14 @@ header > div > div:last-child > a:first-child:hover{
 	}
 	100% {
 		transform: translateY(0px);
+	}
+}
+
+@keyframes enlaces {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(40px);
 	}
 }
