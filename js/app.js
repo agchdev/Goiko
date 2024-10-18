@@ -6,10 +6,44 @@ document.addEventListener("DOMContentLoaded", () => {
     let headerElc2 = document.querySelector(".enlaces > a:nth-child(2)");
     let pHeaderA1 = document.querySelectorAll(".enlaces > a:nth-child(1) > div > span");
     let pHeaderA2 = document.querySelectorAll(".enlaces > a:nth-child(2) > div > span");
+    let textoCarrousel = document.querySelector(".textoCarrousel");
+    let textosCar = document.querySelectorAll(".textoCarrousel > h3");
+    let divimgEnCar = document.querySelector(".divimgEnCar");
+    let imgEnCar = document.querySelectorAll(".imgEnCar");
 
     kevinBacon();
 
     // EVENTOS
+    textoCarrousel.addEventListener("mouseenter", () => {
+        textosCar.forEach(el => {
+            el.classList.add("animHoverCar");
+            setTimeout(() => {
+                el.classList.remove("animHoverCar");
+            }, 399);
+        });
+        imgEnCar.forEach(el => {
+            el.classList.add("animHoverCarrImg");
+            setTimeout(() => {
+                el.classList.remove("animHoverCarrImg");
+            }, 399);
+        })
+    })
+
+    divimgEnCar.addEventListener("mouseenter", () => {
+        imgEnCar.forEach(el => {
+            el.classList.add("animHoverCarrImg");
+            setTimeout(() => {
+                el.classList.remove("animHoverCarrImg");
+            }, 399);
+        })
+        textosCar.forEach(el => {
+            el.classList.add("animHoverCar");
+            setTimeout(() => {
+                el.classList.remove("animHoverCar");
+            }, 399);
+        });
+    })
+
     headerElc1.addEventListener("mouseenter", () => {
         pHeaderA1.forEach(el => {
             el.classList.add("animHover");

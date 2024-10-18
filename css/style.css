@@ -63,6 +63,7 @@ header{
     position: fixed;
     width: 100%;
     top: 2.4rem;
+    z-index: 5;
 
     /* ANIMACION DE OPACIDAD */
     animation-name: opacidadHeader;
@@ -137,6 +138,12 @@ header > div > div:last-child > a:first-child:hover{
 }
 .animHover{
     animation: enlaces .4s ease-out both;
+}
+.animHoverCar{
+    animation: enlacesCar .4s ease-out both;
+}
+.animHoverCarrImg{
+    animation: divimgEnCar .4s ease-out both;
 }
 .hidden{
     overflow: hidden;
@@ -276,11 +283,18 @@ header > div > div:last-child > a:first-child:hover{
     font-size: 1.5rem;
     margin-top: 2rem;
 }
-.text-carrousel > div > img{
-    transform: rotate(135deg);
+.text-carrousel > div > div{
+    display: block;
+    height: 1.5rem;
+    overflow: hidden;
 }
-.text-carrousel > div > h3{
+.text-carrousel > div > div > h3{
     margin-right: 1rem;
+}
+.divimgEnCar{
+    display: flex !important;
+    width: 3%;
+    transform: rotate(135deg);
 }
 /* ANIMACIONES */
 @keyframes movimientoKB{
@@ -316,6 +330,24 @@ header > div > div:last-child > a:first-child:hover{
 	}
 	100% {
 		transform: translateY(-15px);
+	}
+}
+
+@keyframes enlacesCar {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(-23px);
+	}
+}
+
+@keyframes divimgEnCar {
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(-20px);
 	}
 }
 
