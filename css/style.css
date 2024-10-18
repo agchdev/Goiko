@@ -63,6 +63,12 @@ header{
     position: fixed;
     width: 100%;
     top: 2.4rem;
+
+    /* ANIMACION DE OPACIDAD */
+    animation-name: opacidadHeader;
+    animation-duration: 1ms; /* Firefox requires this to apply the animation */
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
 }
 header > div{
  display: flex;
@@ -145,6 +151,12 @@ header > div > div:last-child > a:first-child:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    /* ANIMACION DE OPACIDAD */
+    animation-name: opacidadKb;
+    animation-duration: 1ms; /* Firefox requires this to apply the animation */
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
 }
 #loop > div{
     display: flex;
@@ -312,7 +324,7 @@ header > div > div:last-child > a:first-child:hover{
         scale: 0%;
     }
     100%{
-        scale: 100%;
+        scale: 105%;
     }
 }
 
@@ -325,5 +337,26 @@ header > div > div:last-child > a:first-child:hover{
 	}
 	100% {
 		opacity: 100%;
+	}
+}
+
+@keyframes opacidadHeader {
+    0% {
+		opacity: 100%;
+	}
+	70% {
+		opacity: 100%;
+	}
+	100% {
+		opacity: 0%;
+	}
+}
+
+@keyframes opacidadKb {
+    0% {
+		opacity: 100%;
+	}
+	100% {
+		opacity: 20%;
 	}
 }
