@@ -191,21 +191,22 @@ header > div > div:last-child > a:first-child:hover{
              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 #carrousel{
-    border: .125rem solid white;
-    border-bottom: none;
-    border-radius: 2rem 2rem 0 0;
     overflow: hidden;
-    height: 80vh;
+    height: 30vh;
 }
-#carrousel > div:first-child > div:first-child{
+.div-carrousel{
+    max-width: 100%;
+    width: 100%;
+}
+#carrousel > div:last-child > div:first-child{
     margin-top: 5rem;
     position: absolute;
-    z-index: 0;
+    z-index: 3;
     right: 5%;
     display: flex;
     align-items: center;
 }
-#carrousel > div:first-child > div:first-child > div > p{
+#carrousel > div:last-child > div:first-child > div > p{
     color: white;
     font-family: KnockoutBig !important;
     font-size: 3rem;
@@ -213,19 +214,38 @@ header > div > div:last-child > a:first-child:hover{
     border: 1px solid white;
     border-radius: 50%;
 }
-#carrousel > div:first-child > div:first-child > button{
+#carrousel > div:last-child > div:first-child > button{
     background-color: transparent;
     border: none;
 }
-#carrousel > div:first-child > div:first-child > button:nth-child(2){
+#carrousel > div:last-child > div:first-child > button:nth-child(2){
     margin-right: 2rem;
 }
 .text-carrousel{
     color: white;
+    font-family: KnockoutBig !important;
+    position: absolute;
+    z-index: 3;
+    margin-top: 5rem;
+    left: 5%;
+}
+.text-carrousel > h2{
+    font-size: 6rem;
 }
 .img-carrousel{
+    border: .125rem solid white;
+    border-bottom: none;
+    border-radius: 2rem 2rem 0 0;
+    position: absolute;
+    z-index: 1;
     max-width: 100%;
     width: 100%;
+}
+.text-carrousel > div{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
 }
 /* ANIMACIONES */
 @keyframes movimientoKB{
