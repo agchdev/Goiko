@@ -247,6 +247,9 @@ header > div > div:last-child > a:first-child:hover{
 #carrousel > div:last-child > div:first-child > button:nth-child(2){
     margin-right: 2rem;
 }
+.button-carrousel > button{
+    cursor: pointer;
+}
 .text-carrousel{
     color: white;
     font-family: KnockoutBig !important;
