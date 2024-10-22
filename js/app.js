@@ -1,49 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
     // VARIABLES
-    let kb = document.querySelectorAll(".text-back");
-    let hbInicio = document.querySelector("#hb");
-    let headerElc1 = document.querySelector(".enlaces > a:nth-child(1)");
-    let headerElc2 = document.querySelector(".enlaces > a:nth-child(2)");
-    let pHeaderA1 = document.querySelectorAll(".enlaces > a:nth-child(1) > div > span");
-    let pHeaderA2 = document.querySelectorAll(".enlaces > a:nth-child(2) > div > span");
-    let textoCarrousel = document.querySelector(".textoCarrousel");
-    let textosCar = document.querySelectorAll(".textoCarrousel > h3");
-    let divimgEnCar = document.querySelector(".divimgEnCar");
-    let imgEnCar = document.querySelectorAll(".imgEnCar");
+
+    //KEBIN BACON
+    const kb = document.querySelectorAll(".text-back");
+    const hbInicio = document.querySelector("#hb");
+    const headerElc1 = document.querySelector(".enlaces > a:nth-child(1)");
+    const headerElc2 = document.querySelector(".enlaces > a:nth-child(2)");
+    const pHeaderA1 = document.querySelectorAll(".enlaces > a:nth-child(1) > div > span");
+    const pHeaderA2 = document.querySelectorAll(".enlaces > a:nth-child(2) > div > span");
+
+    //CARROUSEL
+    const carrousel = document.querySelector("#carrousel");
 
     kevinBacon();
 
     // EVENTOS
-    textoCarrousel.addEventListener("mouseenter", () => {
-        textosCar.forEach(el => {
-            el.classList.add("animHoverCar");
-            setTimeout(() => {
-                el.classList.remove("animHoverCar");
-            }, 399);
-        });
-        imgEnCar.forEach(el => {
-            el.classList.add("animHoverCarrImg");
-            setTimeout(() => {
-                el.classList.remove("animHoverCarrImg");
-            }, 399);
-        })
-    })
 
-    divimgEnCar.addEventListener("mouseenter", () => {
-        imgEnCar.forEach(el => {
-            el.classList.add("animHoverCarrImg");
-            setTimeout(() => {
-                el.classList.remove("animHoverCarrImg");
-            }, 399);
-        })
-        textosCar.forEach(el => {
-            el.classList.add("animHoverCar");
-            setTimeout(() => {
-                el.classList.remove("animHoverCar");
-            }, 399);
-        });
-    })
-
+    // BANNER KEBIN BACON
     headerElc1.addEventListener("mouseenter", () => {
         pHeaderA1.forEach(el => {
             el.classList.add("animHover");
@@ -81,8 +54,26 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 2000);
         });
     }
+
     
-    function animHoverEnlaces(){
-        
-    }
+    // CARROUSEL
+    let scale = 0;
+    let size = 250;
+    window.addEventListener("scroll", ()=> {
+        const mediaPantalla = window.innerHeight/2;
+
+        if(window.scrollY < carrousel.offsetTop - mediaPantalla){
+            console.log(window.innerHeight);
+            console.log(window.scrollY);
+
+            if(mediaPantalla >= window.scrollY){
+                scale = (window.scrollY*1)/mediaPantalla;
+                carrousel.style.transform = `scale(${scale})`;
+                size = (window.scrollY*100)/mediaPantalla;
+                carrousel.style.backgroundSize = `${mediaPantalla-size}%`;
+            }
+        }else{
+            carrousel.style.transform = `scale(1)`;
+        }
+    })
 })
