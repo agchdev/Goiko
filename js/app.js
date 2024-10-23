@@ -1,5 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // VARIABLES
+    //MENU HAMBURGUESA
+    const menuHb = document.querySelector(".menuHb");
+    const cerrarMenu = document.querySelector("#cerrarMenu");
+
+    //eventos
+
+    menuHb.addEventListener("click", () => {
+        const divMen = document.createElement("div");
+        document.body.style.overflow = "hidden";
+        menuHb.classList.add("abrirMhb");
+    })
+
+    cerrarMenu.addEventListener("click", () =>{
+        document.body.style.overflow = "auto";
+        menuHb.classList.remove("abrirMhb"); //revisar esta parte del codigo
+    })
 
     //KEBIN BACON
     const kb = document.querySelectorAll(".text-back");
