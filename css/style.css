@@ -62,10 +62,6 @@ table {
 body{
     background-color: #000000;
     overflow-x: hidden;
-    /* |        | */
-    /* |        | */
-    /* v BORRAR V */
-    overflow: hidden; 
 }
 /* MENU HAMBURGUESA */
 .mhb{
@@ -74,13 +70,7 @@ body{
     z-index: 999;
     width: 100%;
     background-color: #ee2737;
-    /* display: none; DESBLOQUEAR AL ACABAR */ 
-
-    /* |        | */
-    /* |        | */
-    /* v BORRAR V */
-    height: 100vh !important; 
-    display: flex;
+    display: none; 
 }
 .abrirMhb{
     display: flex !important;
@@ -202,6 +192,14 @@ body{
     max-width: 100%;
     width: 20px;
 }
+.idioGiro{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    width: 30%;
+    margin: 2rem;
+}
 .idiomas{
     display: flex;
     justify-content: center;
@@ -225,6 +223,35 @@ button.idioma{
 }
 .reservarGiro{
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 1rem;
+}
+.reservarGiro:hover{
+    background-color: white;
+    .filled {
+        fill: #ee2737;
+    }
+    .stroked {
+        fill: rgba(0, 0, 0, 0);
+        stroke: #ee2737;
+    }
+    .flecha{
+        fill: #ee2737 !important;
+    }
+}
+.flecha{
+    fill: #fff;
+}
+.reservarGiro > svg:nth-child(1){
+    width: 300px;
+    animation: rotacion 5s linear infinite;
+}
+.reservarGiro > svg:nth-child(2){
+    position: absolute;
+    width: 80px;
 }
 .filled {
     fill: #fff;
@@ -540,5 +567,13 @@ header > div > div:last-child > a:first-child:hover{
     }
     100%{
         width: 0%;
+    }
+}
+@keyframes rotacion{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
