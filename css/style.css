@@ -7,6 +7,10 @@
     src: url('../font/Knockout-HTF73-FullHeviweight.386a901fd564bd4a47c7.woff2');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/* <uniquifier>: Use a unique and descriptive class name
+   <weight>: Use a value from 200 to 1000 */
+   
 /* RESET CSS */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -58,6 +62,10 @@ table {
 body{
     background-color: #000000;
     overflow-x: hidden;
+    /* |        | */
+    /* |        | */
+    /* v BORRAR V */
+    overflow: hidden; 
 }
 /* MENU HAMBURGUESA */
 .mhb{
@@ -65,8 +73,14 @@ body{
     position: absolute;
     z-index: 999;
     width: 100%;
-    background-color: red;
-    display: none;
+    background-color: #ee2737;
+    /* display: none; DESBLOQUEAR AL ACABAR */ 
+
+    /* |        | */
+    /* |        | */
+    /* v BORRAR V */
+    height: 100vh !important; 
+    display: flex;
 }
 .abrirMhb{
     display: flex !important;
@@ -76,21 +90,56 @@ body{
     display: flex !important;
     animation: ocultar 1s cubic-bezier(0.06, 0.55, 0.58, 1);
 } 
-
-.mhb{
-    flex-direction: column;
-}
-.mhb > div{
-    display: flex;
-    justify-content: space-between;
-}
-
 #cerrarMenu{
-    padding: 25px 50px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     color: white;
-    font-size: 10rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    font-family:"Nunito Sans", sans-serif;
+}
+
+.mhb > div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 10%;
+    height: 100%;
+}
+
+.mhb > div:first-child > svg{
+    position: relative;
+    transform: rotate(-90deg);
+    margin-top: 7rem;
+    fill: white;
+    right: 20px;
+}
+
+.mhb > div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+}
+.textGrandes{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    font-size: 8rem;
+}
+.textGrandes > a{
+    text-decoration: none;
+    font-family: KnockoutBig;
+    color: white;
+    text-transform: uppercase;
+}
+.textGrandes > a:hover{
+    color: transparent;
+    -webkit-text-stroke: 3px white;   
 }
 
 /* HEADER */
@@ -144,7 +193,7 @@ header > div > div:last-child > a, select{
     font-family: KnockoutBig;
     text-decoration: none;
     color: white;
-    font-weight: lighter;
+    font-weight: 100;
     font-size: 1rem;
     text-transform: uppercase;
     border: 2px solid #ee2737;
