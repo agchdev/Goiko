@@ -2,18 +2,26 @@ document.addEventListener("DOMContentLoaded", () => {
     //MENU HAMBURGUESA
     const menuHb = document.querySelector(".menuHb");
     const cerrarMenu = document.querySelector("#cerrarMenu");
+    const menu = document.querySelector(".mhb");
 
     //eventos
 
     menuHb.addEventListener("click", () => {
-        const divMen = document.createElement("div");
         document.body.style.overflow = "hidden";
-        menuHb.classList.add("abrirMhb");
+        menu.classList.add("abrirMhb");
+        menu.classList.remove("cerrarMhb");
+        setTimeout(() => {
+            menu.style.height = "100vh";
+        }, 1000);
     })
 
     cerrarMenu.addEventListener("click", () =>{
         document.body.style.overflow = "auto";
-        menuHb.classList.remove("abrirMhb"); //revisar esta parte del codigo
+        menu.classList.remove("abrirMhb"); //revisar esta parte del codigo
+        menu.classList.add("cerrarMhb"); //revisar esta parte del codigo
+        setTimeout(() => {
+            menu.style.height = "0";
+        }, 1000);
     })
 
     //KEBIN BACON
