@@ -427,7 +427,9 @@ header > div > div:last-child > a:first-child:hover{
 }
 #carrousel > div{
     height: 70vh;
+    display: flex;
 }
+
 /* ANIMACIONES */
 @keyframes movimientoKB{
     0%{
