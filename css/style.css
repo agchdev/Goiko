@@ -202,6 +202,37 @@ body{
     max-width: 100%;
     width: 20px;
 }
+.idiomas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+button.idioma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    padding: .75rem 1rem;
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: Knockout;
+}
+.reservarGiro{
+    background-color: black;
+}
+.filled {
+    fill: #fff;
+}
+.stroked {
+    fill: rgba(0, 0, 0, 0);
+    stroke: #fff;
+}
 
 /* HEADER */
 header{
@@ -250,7 +281,7 @@ header > div > div:last-child{
     align-items: center;
     width: 25%;
 }
-header > div > div:last-child > a, select{
+header > div > div:last-child > a{
     font-family: KnockoutBig;
     text-decoration: none;
     color: white;
@@ -261,11 +292,7 @@ header > div > div:last-child > a, select{
     border-radius: 3rem;
     padding: .75rem 1rem;
 }
-header > div > div:last-child > select{
-    border: 2px solid white;
-    background-color: transparent;
-    font-family: Knockout;
-}
+
 header > div > div:last-child > a:first-child{
     border: 2px solid white;
 }
