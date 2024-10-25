@@ -567,6 +567,8 @@ header > div > div:last-child > a:first-child:hover{
     align-items: center;
     margin: auto;
     gap: 2rem;
+    pointer-events: none;
+    user-select: none;
 }
 #scrollHC > div > div:nth-child(1){
     margin-left: 4rem;
