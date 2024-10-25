@@ -66,7 +66,7 @@ body{
 /* MENU HAMBURGUESA */
 .mhb{
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     width: 100%;
     background-color: #ee2737;
