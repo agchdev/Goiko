@@ -468,12 +468,12 @@ header > div > div:last-child > a:first-child:hover{
     align-items: center;
     /* flex-direction: column; */
 }
-#carrousel > div:nth-child(1) > div > p{
+.textArrow > p{
     font-family: KnockoutBig;
     font-size: 1.5rem;
     text-transform: uppercase;
 }
-#carrousel > div:nth-child(1) > div > img{
+.textArrow > img{
     transform: rotate(-45deg);
     margin-left: 5px;
     width: 23px;
@@ -541,6 +541,9 @@ header > div > div:last-child > a:first-child:hover{
     overflow-y: hidden;
     margin: auto;
     margin-top: 5rem;
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 #scrollHC > div{
     display: flex;
@@ -555,22 +558,46 @@ header > div > div:last-child > a:first-child:hover{
     margin: auto;
     gap: 2rem;
 }
+#scrollHC > div > div:nth-child(1){
+    margin-left: 4rem;
+}
+#scrollHC > div > div:nth-child(3){
+    margin-right: 4rem;
+}
 #scrollHC > div > div > article{
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     margin: auto;
+    color: white;
+}
+#scrollHC > div > div > article > p{
+    font-family: Knockout;
+    margin-top: .5rem;
+    font-weight: 100;
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    color: #8d8d8d;
+}
+#scrollHC > div > div > article > div:nth-child(2){
+    margin-top: 1rem;
+}
+#scrollHC > div > div > article > div:nth-child(2){
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 #scrollHC > div > div > article > div:nth-child(1){
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
     overflow: hidden;
     border-radius: 2rem;
     border: 2px solid white;
 }
 #scrollHC > div > div > article > div:nth-child(1) > img{
     max-width: 100%;
+    width: 100%;
 }
 /* ANIMACIONES */
 @keyframes movimientoKB{
