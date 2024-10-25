@@ -538,11 +538,28 @@ header > div > div:last-child > a:first-child:hover{
 #scrollHC{
     display: flex;
     align-items: center;
+    overflow-y: hidden;
+    margin: auto;
+    margin-top: 5rem;
+}
+#scrollHC > div{
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    margin: auto;
+    gap: 2rem;
+}
+#scrollHC > div > div{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 2rem;
 }
 #scrollHC > div > div > article{
     display: flex;
     justify-content: start;
     align-items: center;
+    flex-direction: column;
     margin: auto;
 }
 #scrollHC > div > div > article > div:nth-child(1){
