@@ -430,8 +430,16 @@ header > div > div:last-child > a:first-child:hover{
 #carrousel{
     display: flex;
     color: white;
+    justify-content: space-between;
 }
-
+#carrousel > div{
+    view-timeline-name: --efecto;
+    view-timeline-axis: block;
+    animation-timeline: --efecto;
+    animation-name: opacidad;
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+}
 #carrousel > div:nth-child(1){
     display: flex;
     flex-direction: column;
@@ -470,7 +478,39 @@ header > div > div:last-child > a:first-child:hover{
     margin-left: 5px;
     width: 23px;
 }
+#carrousel > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+#carrousel > div:nth-child(2) > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+#carrousel > div:nth-child(2) > div > div:nth-child(1){
+    display: flex;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+#carrousel > div:nth-child(2) > div > div:nth-child(1) > img{
+    width: 25px;
+    height: 25px;
+}
 
+#carrousel > div:nth-child(2) > div > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+    font-family: KnockoutBig;
+    border: 1px solid white;
+    border-radius: 50%;
+}
 /* ANIMACIONES */
 @keyframes movimientoKB{
     0%{
@@ -540,6 +580,15 @@ header > div > div:last-child > a:first-child:hover{
 		opacity: 0%;
 	}
 	70% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+@keyframes opacidad {
+    0% {
 		opacity: 0%;
 	}
 	100% {
