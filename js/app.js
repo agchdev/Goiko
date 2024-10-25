@@ -79,24 +79,29 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     
-    // // CARROUSEL
-    // let scale = 0;
-    // let size = 250;
-    // window.addEventListener("scroll", ()=> {
-    //     const mediaPantalla = window.innerHeight/2;
+    // SCROLL HORIZONTAL
 
-    //     if(window.scrollY < carrousel.offsetTop - mediaPantalla){
-    //         console.log(window.innerHeight);
-    //         console.log(window.scrollY);
+    // variables
+    scrollHC = document.querySelector("#scrollHC > div");
+    let mover = false;
 
-    //         if(mediaPantalla >= window.scrollY){
-    //             scale = (window.scrollY*1)/mediaPantalla;
-    //             carrousel.style.transform = `scale(${scale})`;
-    //             size = (window.scrollY*100)/mediaPantalla;
-    //             carrousel.style.backgroundSize = `${mediaPantalla-size}%`;
-    //         }
-    //     }else{
-    //         carrousel.style.transform = `scale(1)`;
-    //     }
-    // })
+    // eventos
+    scrollHC.addEventListener("mousedown", (e) => {
+        mover = true;
+        startX = e.pageX - scrollHC.offsetLeft;
+        scrollLeft = scrollHC.scrollLeft;
+    })
+    scrollHC.addEventListener("mouseleave", () => {
+        mover = false;
+    })
+    scrollHC.addEventListener('mouseup', () => {
+        mover = false;
+    });
+    scrollHC.addEventListener('mousemove', (e) => {
+        if (!mover) return;
+        e.preventDefault();
+        const x = e.pageX - scrollHC.offsetLeft;
+        const walk = (x - startX) * 1; // Ajusta la velocidad del scroll
+        scrollHC.scrollLeft = scrollLeft - walk;
+    });
 })

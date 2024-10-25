@@ -12,6 +12,9 @@
    <weight>: Use a value from 200 to 1000 */
    
 /* RESET CSS */
+html{
+    scroll-behavior: smooth;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -468,7 +471,11 @@ header > div > div:last-child > a:first-child:hover{
     align-items: center;
     /* flex-direction: column; */
 }
+.textArrow{
+    width: 100%;
+}
 .textArrow > p{
+    width: auto;
     font-family: KnockoutBig;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -476,7 +483,8 @@ header > div > div:last-child > a:first-child:hover{
 .textArrow > img{
     transform: rotate(-45deg);
     margin-left: 5px;
-    width: 23px;
+    width: 30px;
+    height: 30px;
 }
 #carrousel > div:nth-child(2){
     display: flex;
@@ -541,6 +549,7 @@ header > div > div:last-child > a:first-child:hover{
     overflow-y: hidden;
     margin: auto;
     margin-top: 5rem;
+    margin-bottom: 5rem;
     ::-webkit-scrollbar {
         display: none;
     }
@@ -551,8 +560,11 @@ header > div > div:last-child > a:first-child:hover{
     overflow-y: hidden;
     margin: auto;
     gap: 2rem;
+    user-select: none;
+    cursor: grab;
 }
 #scrollHC > div > div{
+    pointer-events: none;
     display: flex;
     align-items: center;
     margin: auto;
@@ -595,9 +607,14 @@ header > div > div:last-child > a:first-child:hover{
     border-radius: 2rem;
     border: 2px solid white;
 }
-#scrollHC > div > div > article > div:nth-child(1) > img{
-    max-width: 100%;
-    width: 100%;
+.nopuedomas > article > div:nth-child(1) > img{
+    max-width: 100% !important;
+    width: 100% !important; 
+}
+.sipuedomas > article > div:nth-child(1) > img{
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
 }
 /* ANIMACIONES */
 @keyframes movimientoKB{
