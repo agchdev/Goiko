@@ -79,24 +79,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     
-    // CARROUSEL
-    let scale = 0;
-    let size = 250;
-    window.addEventListener("scroll", ()=> {
-        const mediaPantalla = window.innerHeight/2;
+    // // CARROUSEL
+    // let scale = 0;
+    // let size = 250;
+    // window.addEventListener("scroll", ()=> {
+    //     const mediaPantalla = window.innerHeight/2;
 
-        if(window.scrollY < carrousel.offsetTop - mediaPantalla){
-            console.log(window.innerHeight);
-            console.log(window.scrollY);
+    //     if(window.scrollY < carrousel.offsetTop - mediaPantalla){
+    //         console.log(window.innerHeight);
+    //         console.log(window.scrollY);
 
-            if(mediaPantalla >= window.scrollY){
-                scale = (window.scrollY*1)/mediaPantalla;
-                carrousel.style.transform = `scale(${scale})`;
-                size = (window.scrollY*100)/mediaPantalla;
-                carrousel.style.backgroundSize = `${mediaPantalla-size}%`;
-            }
-        }else{
-            carrousel.style.transform = `scale(1)`;
-        }
-    })
+    //         if(mediaPantalla >= window.scrollY){
+    //             scale = (window.scrollY*1)/mediaPantalla;
+    //             carrousel.style.transform = `scale(${scale})`;
+    //             size = (window.scrollY*100)/mediaPantalla;
+    //             carrousel.style.backgroundSize = `${mediaPantalla-size}%`;
+    //         }
+    //     }else{
+    //         carrousel.style.transform = `scale(1)`;
+    //     }
+    // })
 })
