@@ -437,6 +437,8 @@ header > div > div:last-child > a:first-child:hover{
     flex-direction: column;
     width: 74%;
     margin-top: 30rem;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
 }
 #carrousel > div:nth-child(1) > p{
     font-family: Knockout;
@@ -447,19 +449,26 @@ header > div > div:last-child > a:first-child:hover{
 }
 #carrousel > div:nth-child(1) > div > h3{
     font-family: KnockoutBig;
-    font-weight: 700;
+    font-weight: 100;
     font-size: 6rem;
     line-height: 5.125rem;
     text-transform: uppercase;
 }
 #carrousel > div:nth-child(1) > div:nth-child(3){
     display: flex;
+    justify-content: start;
+    align-items: center;
     /* flex-direction: column; */
 }
 #carrousel > div:nth-child(1) > div > p{
     font-family: KnockoutBig;
     font-size: 1.5rem;
     text-transform: uppercase;
+}
+#carrousel > div:nth-child(1) > div > img{
+    transform: rotate(-45deg);
+    margin-left: 5px;
+    width: 23px;
 }
 
 /* ANIMACIONES */
