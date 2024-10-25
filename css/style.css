@@ -511,6 +511,28 @@ header > div > div:last-child > a:first-child:hover{
     border: 1px solid white;
     border-radius: 50%;
 }
+
+/* MINI KEBIN BACON */
+
+#carta{
+    margin-top: 1rem;
+    display: flex;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    font-family: KnockoutBig;
+    font-size: 9rem;
+    color: white;
+    text-transform: uppercase;
+}
+#carta p{
+    position: relative;
+    animation: movimientoKB 35s linear infinite;
+}
+#carta span{
+    color: black;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
 /* ANIMACIONES */
 @keyframes movimientoKB{
     0%{
