@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // variables
     scrollHC = document.querySelector("#scrollHC > div");
+    articles = document.querySelectorAll("#scrollHC > div > div > article");
     let mover = false;
 
     // eventos
@@ -103,5 +104,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const x = e.pageX - scrollHC.offsetLeft;
         const walk = (x - startX) * 1; // Ajusta la velocidad del scroll
         scrollHC.scrollLeft = scrollLeft - walk;
+        articles.forEach(el => { 
+            el.addEventListener("mouseover", () => {
+                console.log(el);
+                el.style.cursor = "pointer";
+            })
+        })
     });
 })

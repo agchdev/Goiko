@@ -560,11 +560,9 @@ header > div > div:last-child > a:first-child:hover{
     overflow-y: hidden;
     margin: auto;
     gap: 2rem;
-    user-select: none;
     cursor: grab;
 }
 #scrollHC > div > div{
-    pointer-events: none;
     display: flex;
     align-items: center;
     margin: auto;
@@ -615,6 +613,12 @@ header > div > div:last-child > a:first-child:hover{
     width: 550px;
     height: 550px;
     object-fit: cover;
+}
+#scrollHC > div > div > article > div:hover{
+    fill: rgba(255, 0, 0, 0.247);
+}
+#scrollHC > div > div > article > div:nth-child(1) > img:hover{
+    filter: sepia(100%) saturate(2) hue-rotate(-50deg) brightness(50%); /* Tono rojo */
 }
 /* ANIMACIONES */
 @keyframes movimientoKB{
