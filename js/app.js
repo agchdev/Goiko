@@ -116,8 +116,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const imgs = document.querySelectorAll("#contador > div > img");
 
-    imgsNew = ["img/numeros/d.svg","img/numeros/d.svg","img/numeros/d.svg","img/numeros/d.svg","img/numeros/d.svg","img/numeros/d.svg"];
-
+    imgsNew = ["img/numeros/0.svg","img/numeros/1.svg","img/numeros/2.svg","img/numeros/3.svg","img/numeros/7.svg","img/numeros/9.svg"];
+    let cont= 0;
     
-
+    if (scrollY < 2308) {
+        imgs.forEach(img => {
+            setTimeout(() => {
+                img.target.src = imgsNew[cont];
+            }, 500);
+            cont++;
+        })
+    }
+    
 })

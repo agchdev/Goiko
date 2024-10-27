@@ -627,6 +627,7 @@ header > div > div:last-child > a:first-child:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40rem;
 }
 #contador > h3{
     text-align: center;
@@ -639,15 +640,25 @@ header > div > div:last-child > a:first-child:hover{
     display: flex;
     justify-content: center;
     gap: 3rem;
+    margin-top: 3rem;
 }
 #contador > div > div{
     display: flex;
     justify-content: space-around;
+    gap: 1rem;
 }
 #contador > div > div > img{
     max-width: 100%;
     width: 100px;
     margin: auto;
+    background-image: url("img/numeros/1.svg");
+
+    view-timeline-name: --efecto;
+    view-timeline-axis: block;
+    animation-timeline: --efecto;
+    animation-name: opacidad;
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
 }
 /* ANIMACIONES */
 @keyframes movimientoKB{
