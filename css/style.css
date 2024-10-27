@@ -622,6 +622,17 @@ header > div > div:last-child > a:first-child:hover{
 #scrollHC > div > div > article > div:nth-child(1) > img:hover{
     filter: sepia(100%) saturate(2) hue-rotate(-50deg) brightness(50%); /* Tono rojo */
 }
+/* CONTADOR */
+#contador{
+    display: flex;
+    flex-direction: column;
+}
+#contador > h3{
+    color: white;
+    font-family: KnockoutBig;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
 /* ANIMACIONES */
 @keyframes movimientoKB{
     0%{

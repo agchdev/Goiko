@@ -111,4 +111,10 @@ document.addEventListener("DOMContentLoaded", () => {
             })
         })
     });
+
+    // CONTADOR
+
+    const imgs = document.querySelectorAll("#contador > div > img");
+
+    
 })
