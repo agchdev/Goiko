@@ -458,7 +458,7 @@ header > div > div:last-child > a:first-child:hover{
 #carrousel > div:nth-child(1) > div{
     margin-top: 2rem;
 }
-#carrousel > div:nth-child(1) > div > h3{
+.h3def{
     font-family: KnockoutBig;
     font-weight: 100;
     font-size: 6rem;
@@ -627,7 +627,7 @@ header > div > div:last-child > a:first-child:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40rem;
+    margin-bottom: 4rem;
 }
 #contador > h3{
     text-align: center;
@@ -659,6 +659,45 @@ header > div > div:last-child > a:first-child:hover{
     animation-name: opacidad;
     animation-range: entry 10% cover 50%;
     animation-fill-mode: both;
+}
+
+/* PARTE MONEDA */
+#bgmoneda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(151,29,39);
+    background: -moz-linear-gradient(90deg, rgba(151,29,39,1) 24%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(151,29,39,1) 24%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(151,29,39,1) 24%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#971d27",endColorstr="#000000",GradientType=1);
+}
+#bgmoneda > div:nth-child(2){
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+
+}
+
+#bgmoneda > div:nth-child(2) > h3{
+    font-family: KnockoutBig;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 4rem;
+    color: white !important;
+    font-size: 4rem !important;   
+}
+.elc{
+    font-family: KnockoutBig;
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 2px solid #ee2737;
+    border-radius: 3rem;
+    padding: .75rem 1rem;
 }
 /* ANIMACIONES */
 @keyframes movimientoKB{
