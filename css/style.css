@@ -632,7 +632,7 @@ header > div > div:last-child > a:first-child:hover{
     text-align: center;
     color: white;
     font-family: KnockoutBig;
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
 }
 #contador > div{

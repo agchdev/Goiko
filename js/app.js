@@ -116,5 +116,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const imgs = document.querySelectorAll("#contador > div > img");
 
+    imgsNew = ["img/numeros/d.svg","img/numeros/d.svg","img/numeros/d.svg","img/numeros/d.svg","img/numeros/d.svg","img/numeros/d.svg"];
+
     
+
 })
