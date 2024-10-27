@@ -626,12 +626,28 @@ header > div > div:last-child > a:first-child:hover{
 #contador{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 #contador > h3{
+    text-align: center;
     color: white;
     font-family: KnockoutBig;
-    font-size: 5rem;
+    font-size: 2rem;
     text-transform: uppercase;
+}
+#contador > div{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+#contador > div > div{
+    display: flex;
+    justify-content: space-around;
+}
+#contador > div > div > img{
+    max-width: 100%;
+    width: 100px;
+    margin: auto;
 }
 /* ANIMACIONES */
 @keyframes movimientoKB{
