@@ -729,8 +729,8 @@ header > div > div:last-child > a:first-child:hover{
 }
 #truck > div > video{
     position: absolute;
-    width: 100%;
     z-index: -10;
+    object-fit: cover;
 }
 #truck > div > div{
     display: flex;
@@ -749,7 +749,7 @@ header > div > div:last-child > a:first-child:hover{
     font-family: Knockout;
     font-size: 1rem;
 }
-#truck > div > div > div:nth-child(2){
+#truck > div > div > div:last-child{
     margin-top: 2rem;
     display: flex;
 }
@@ -765,7 +765,6 @@ header > div > div:last-child > a:first-child:hover{
     font-size: 4rem;
     line-height: 5.125rem;
     text-transform: uppercase;
-    border: 1px solid red;
 }
 
 /* ANIMACIONES */
