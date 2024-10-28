@@ -821,6 +821,8 @@ header > div > div:last-child > a:first-child:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 5rem;
+    border: 1px solid red;
 }
 #noticias > div:nth-child(1){
     display: flex;
@@ -870,12 +872,20 @@ header > div > div:last-child > a:first-child:hover{
     letter-spacing: -0.02em;
     margin: 1rem 0 0;
 }
+#noticias > div:nth-child(2){
+    margin-bottom: 20rem;
+}
 #noticias > div:nth-child(2) > a > div{
     height: 20px;
 }
 #noticias > div:nth-child(2) > a{
     padding: 1.25rem 2.5rem;
     font-size: 1.2rem;
+}
+
+/* FOOTER */
+footer{
+    background-color: white;
 }
 
 /* ANIMACIONES */
