@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cerrarMenu.addEventListener("click", () =>{
         document.body.style.overflow = "auto";
+        document.body.style.overflowX = "hidden";
         menu.classList.remove("abrirMhb"); //revisar esta parte del codigo
         menu.classList.add("cerrarMhb"); //revisar esta parte del codigo
         setTimeout(() => {
