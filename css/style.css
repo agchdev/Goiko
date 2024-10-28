@@ -887,6 +887,29 @@ header > div > div:last-child > a:first-child:hover{
 footer{
     background-color: white;
 }
+footer >section> div >div > svg{
+    width: 130px;
+}
+footer >section> div{
+    display: flex;
+    justify-content: space-around;
+}
+footer > section > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+footer > section > div > div > a{
+    text-decoration: none;
+    color: black;
+}
+footer > section > div > div:nth-child(2){
+    font-family: KnockoutBig;
+    text-transform: uppercase;  
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
 
 /* ANIMACIONES */
 @keyframes movimientoKB{
