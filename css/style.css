@@ -666,6 +666,7 @@ header > div > div:last-child > a:first-child:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10rem 0;
 
     background: rgb(151,29,39);
     background: -moz-linear-gradient(90deg, rgba(151,29,39,1) 24%, rgba(0,0,0,1) 100%);
@@ -674,13 +675,20 @@ header > div > div:last-child > a:first-child:hover{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#971d27",endColorstr="#000000",GradientType=1);
 }
 #bgmoneda > div:nth-child(2){
-    text-transform: uppercase;
     text-align: left;
     color: white;
 
 }
-
+#bgmoneda > div:nth-child(2) > p{
+    font-family: Knockout;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    color: #fff;  
+    margin: 1.5rem 0;
+}
 #bgmoneda > div:nth-child(2) > h3{
+    text-transform: uppercase;
     font-family: KnockoutBig;
     font-weight: 700;
     font-size: 4.5rem;
@@ -688,17 +696,35 @@ header > div > div:last-child > a:first-child:hover{
     color: white !important;
     font-size: 4rem !important;   
 }
+#bgmoneda > div:nth-child(2) > div{
+    width: 25%;
+}
 .elc{
+    display: inline-block;
     font-family: KnockoutBig;
     text-decoration: none;
     color: white;
     font-weight: 100;
     font-size: 1rem;
     text-transform: uppercase;
-    border: 2px solid #ee2737;
+    border: 2px solid white;
     border-radius: 3rem;
     padding: .75rem 1rem;
 }
+.elc:hover{
+    background-color: white;
+    color: black;
+}
+
+/* VIDEOTRUCK */
+#truck{
+    color: white;
+}
+#truck > video{
+    position: absolute;
+
+}
+
 /* ANIMACIONES */
 @keyframes movimientoKB{
     0%{
