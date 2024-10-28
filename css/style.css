@@ -837,6 +837,12 @@ header > div > div:last-child > a:first-child:hover{
     align-items: start;
     color: white;
     margin-bottom: 3rem;
+    cursor: pointer;
+}
+#noticias > div:nth-child(1) > article:hover{
+    h3{
+        text-decoration: underline;
+    }
 }
 #noticias > div:nth-child(1) > article > img{
     width: 550px;
