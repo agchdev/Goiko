@@ -814,7 +814,35 @@ header > div > div:last-child > a:first-child:hover{
     width: 40%;
 }
 
-/* NEWS GOIKO! */
+/* NOTICIAS */
+
+#noticias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#noticias > div:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#noticias > div:nth-child(1) > article{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    color: white;
+}
+#noticias > div:nth-child(1) > article > div{
+    padding: 2rem;
+    width: 200px;
+    height: 150px;
+    border: 1px solid white;
+}
+#noticias > div:nth-child(1) > article > div > img{
+    object-fit: cover;
+}
 
 /* ANIMACIONES */
 @keyframes movimientoKB{
