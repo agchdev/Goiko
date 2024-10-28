@@ -886,6 +886,7 @@ header > div > div:last-child > a:first-child:hover{
 /* FOOTER */
 footer{
     background-color: white;
+    padding-top: 8rem;
 }
 footer >section> div >div > svg{
     width: 130px;
@@ -897,18 +898,31 @@ footer >section> div{
 footer > section > div > div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: start;
 }
 footer > section > div > div > a{
     text-decoration: none;
     color: black;
 }
+footer > section > div > div:nth-child(1){
+    margin-left: 3rem;
+    width: 40%;
+}
 footer > section > div > div:nth-child(2){
     font-family: KnockoutBig;
     text-transform: uppercase;  
     font-size: 3rem;
-    line-height: 3.5rem;
+}
+footer > section > div > div:nth-child(2) > a:hover{
+    color: white;
+    -webkit-text-stroke: 2px black;  
+}
+footer > section > div > div:nth-child(3){
+    font-family: Knockout;
+    text-transform: uppercase;  
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 /* ANIMACIONES */
