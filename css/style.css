@@ -894,12 +894,21 @@ footer >section> div >div > svg{
 footer >section> div{
     display: flex;
     justify-content: space-around;
+    align-items: start;
 }
 footer > section > div > div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+}
+footer > section > div:nth-child(2){
+    display: flex;
+    width: 20%;
+}
+footer > section > div:nth-child(2) > a > svg{
+    width: 30px;
+    fill: black !important;
 }
 footer > section > div > div > a{
     text-decoration: none;
@@ -913,6 +922,7 @@ footer > section > div > div:nth-child(2){
     font-family: KnockoutBig;
     text-transform: uppercase;  
     font-size: 3rem;
+    line-height: 3.5rem;
 }
 footer > section > div > div:nth-child(2) > a:hover{
     color: white;
@@ -923,6 +933,14 @@ footer > section > div > div:nth-child(3){
     text-transform: uppercase;  
     font-size: 1rem;
     line-height: 1.5rem;
+}
+footer > section > div > div:nth-child(3) > a{
+    margin-bottom: 2px;
+    width: auto;
+}
+footer > section > div > div:nth-child(3) > a:hover{
+    margin-bottom: 0;
+    border-bottom: 2px solid black;
 }
 
 /* ANIMACIONES */
