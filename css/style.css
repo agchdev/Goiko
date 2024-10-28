@@ -720,7 +720,7 @@ header > div > div:last-child > a:first-child:hover{
 /* VIDEOTRUCK */
 #truck{
     color: white;
-    height: 80vh;
+    height: 83vh;
     background: rgb(0,0,0);
     background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 34%);
     background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 34%);
@@ -730,7 +730,7 @@ header > div > div:last-child > a:first-child:hover{
 #truck > div{
     position: absolute;
     width: 100%;
-    height: 80%;
+    height: 83%;
     overflow: hidden;
 }
 #truck > div > video{
@@ -807,7 +807,7 @@ header > div > div:last-child > a:first-child:hover{
     margin: 0 0 2.5rem 0;
 }
 #caeComida > div:nth-child(2) > h4{
-    font-family: Nunito;
+    font-family:"Nunito Sans", sans-serif;
     font-weight: 400;
     font-size: 5rem;
     margin: 0 0 2rem 0;
