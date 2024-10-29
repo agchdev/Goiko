@@ -1056,16 +1056,19 @@ footer{
     border-radius: 100%;
 }
 .transicionP{
-    border: 1px solid red;
     overflow: hidden;
 }
 .transicionP > p{
     transform: translateY(-12px);
+    transition: all .4s ease;
 }
 #copyright > a:hover{
     .circle{
         background-color: transparent;
         border-radius: 100%;
+    }
+    p{
+        transform: translateY(0px);
     }
 }
 /* ANIMACIONES */
