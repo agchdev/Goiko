@@ -1104,7 +1104,7 @@ footer{
     }
 }
 /* RESPONSIVE 1200px */
-@media (min-width: 1200px){
+@media (max-width: 1200px){
     header > div > div:first-child > svg:first-child{
         width: 45%;
     }
