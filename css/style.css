@@ -1103,7 +1103,18 @@ footer{
         transform: translateY(0px);
     }
 }
-/* RESPONSIVE 720px */
+/* RESPONSIVE 1200px */
+@media (min-width: 1200px){
+    header > div > div:first-child > svg:first-child{
+        width: 45%;
+    }
+    header > div > div:first-child > svg:last-child{
+        width: 35%;
+    }
+    .enlaces{
+        width: 50% !important;
+    }
+}
 
 /* ANIMACIONES */
 @keyframes movimientoKB{
