@@ -1103,6 +1103,8 @@ footer{
         transform: translateY(0px);
     }
 }
+/* RESPONSIVE 720px */
+
 /* ANIMACIONES */
 @keyframes movimientoKB{
     0%{
