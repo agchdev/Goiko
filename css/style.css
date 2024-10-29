@@ -1010,6 +1010,13 @@ footer{
 
 .elcMa{
     background-color: black !important;
+    border: 1px solid black !important;
+}
+.elcMa:hover{
+    background-color: white !important;
+    path{
+        fill: black !important;
+    }
 }
 
 .fill{
@@ -1185,10 +1192,13 @@ footer{
     0% {
 		opacity: 100%;
 	}
-	75% {
+	10% {
 		opacity: 100%;
 	}
-	100% {
+	14% {
+		opacity: 0%;
+	}
+    100% {
 		opacity: 0%;
 	}
 }
