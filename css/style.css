@@ -77,11 +77,11 @@ body{
 }
 .abrirMhb{
     display: flex !important;
-    animation: mostrar 1s cubic-bezier(0.06, 0.55, 0.58, 1);
+    animation: mostrar 1s cubic-bezier(0.78, 0, 0.13, 1);
 } 
 .cerrarMhb{
     display: flex !important;
-    animation: ocultar 1s cubic-bezier(0.06, 0.55, 0.58, 1);
+    animation: ocultar 1s cubic-bezier(0.78, 0, 0.13, 1);
 } 
 #cerrarMenu{
     width: 150px;
@@ -221,8 +221,29 @@ button.idioma{
     border-radius: 3rem;
     padding: .75rem 1rem;
     border: 2px solid white;
-    background-color: transparent;
+    background-color: #ee2737;
     font-family: Knockout;
+}
+button.idioma:last-child{
+    transform: translateX(-83px);
+    transition: all .5s cubic-bezier(0.78, 0, 0.13, 1);;
+}
+.sube{
+    transform: translateY(0px);
+    transition: all .5s cubic-bezier(0.78, 0, 0.13, 1);;
+
+}
+.baja{
+    transform: translateY(65px);
+    transition: all .5s cubic-bezier(0.78, 0, 0.13, 1);;
+}
+.rotar{
+    transform: rotate(180deg);
+    transition: all .5s cubic-bezier(0.78, 0, 0.13, 1);;
+}
+.noRotar{
+    transform: rotate(0deg);
+    transition: all .5s cubic-bezier(0.78, 0, 0.13, 1);;
 }
 .reservarGiro{
     background-color: black;
@@ -353,6 +374,10 @@ header > div > div:last-child > a:first-child:hover{
 }
 .hidden > span{
     display: block;
+}
+
+.cambiosH > button{
+    background-color: black;
 }
 
 /* PRIMER SECTION */

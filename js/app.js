@@ -129,4 +129,46 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
     
+
+    // ANIMACION DE BOTON
+    const botonCatalan = document.querySelector("#catalan");
+    const botonEspañol = document.querySelector("#español");
+    const botonCatalanH = document.querySelector("#catalanH");
+    const botonEspañolH = document.querySelector("#españolH");
+    const flechita = document.querySelector("#español > svg");
+    const flechitaH = document.querySelector("#españolH > svg");
+
+    let bajado = true;
+    let bajadoH = true;
+    botonEspañol.addEventListener("click", () => {
+        if(bajado) {
+            flechita.classList.add("noRotar");
+            flechita.classList.remove("rotar");
+            botonCatalan.classList.remove("baja");
+            botonCatalan.classList.add("sube");
+            bajado = false;
+        }else{
+            flechita.classList.add("rotar");
+            flechita.classList.remove("noRotar");
+            botonCatalan.classList.remove("sube");
+            botonCatalan.classList.add("baja");
+            bajado = true;
+        }
+    })
+
+    botonEspañolH.addEventListener("click", () => {
+        if(bajadoH) {
+            flechitaH.classList.add("noRotar");
+            flechitaH.classList.remove("rotar");
+            botonCatalanH.classList.remove("baja");
+            botonCatalanH.classList.add("sube");
+            bajadoH = false;
+        }else{
+            flechitaH.classList.add("rotar");
+            flechitaH.classList.remove("noRotar");
+            botonCatalanH.classList.remove("sube");
+            botonCatalanH.classList.add("baja");
+            bajadoH = true;
+        }
+    })
 })
