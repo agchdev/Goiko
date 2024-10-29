@@ -858,7 +858,8 @@ header > div > div:last-child > a:first-child:hover{
     justify-content: center;
     align-items: center;
     border-radius: 5rem;
-    border: 1px solid red;
+    background-color: #000000;
+    filter: drop-shadow(0 100px 0 white);
 }
 #noticias > div:nth-child(1){
     display: flex;
@@ -919,66 +920,154 @@ header > div > div:last-child > a:first-child:hover{
     font-size: 1.2rem;
 }
 
-/* FOOTER */
+/* FOOTER ENLACES */
+
 footer{
     background-color: white;
     padding-top: 8rem;
 }
-footer >section> div >div > svg{
+#enlacesFooter > div >div > svg{
     width: 130px;
 }
-footer >section> div{
+#enlacesFooter > div{
     display: flex;
     justify-content: space-around;
     align-items: start;
 }
-footer > section > div > div{
+#enlacesFooter > div > div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
 }
-footer > section > div:nth-child(2){
+#enlacesFooter > div:nth-child(2){
     display: flex;
     width: 20%;
 }
-footer > section > div:nth-child(2) > a > svg{
-    width: 30px;
+#enlacesFooter > div:nth-child(2) > a > svg{
+    width: 15px;
     fill: black !important;
 }
-footer > section > div > div > a{
+#enlacesFooter > div > div > a{
     text-decoration: none;
     color: black;
 }
-footer > section > div > div:nth-child(1){
+#enlacesFooter > div > div:nth-child(1){
     margin-left: 3rem;
     width: 40%;
 }
-footer > section > div > div:nth-child(2){
+#enlacesFooter > div > div:nth-child(2){
     font-family: KnockoutBig;
     text-transform: uppercase;  
     font-size: 3rem;
     line-height: 3.5rem;
 }
-footer > section > div > div:nth-child(2) > a:hover{
+#enlacesFooter > div > div:nth-child(2) > a:hover{
     color: white;
     -webkit-text-stroke: 2px black;  
 }
-footer > section > div > div:nth-child(3){
+#enlacesFooter > div > div:nth-child(3){
     font-family: Knockout;
     text-transform: uppercase;  
     font-size: 1rem;
     line-height: 1.5rem;
 }
-footer > section > div > div:nth-child(3) > a{
+#enlacesFooter > div > div:nth-child(3) > a{
     margin-bottom: 2px;
     width: auto;
 }
-footer > section > div > div:nth-child(3) > a:hover{
+#enlacesFooter > div > div:nth-child(3) > a:hover{
     margin-bottom: 0;
     border-bottom: 2px solid black;
 }
 
+/* FOOTER FOREVER CHORREO */
+
+.elcMa{
+    background-color: black !important;
+}
+
+.fill{
+    fill: white !important;
+}
+
+#enlacesFooter > div:nth-child(2){
+    width: 10%;
+    margin-left: 3rem;
+    padding-bottom: 2rem;
+}
+.lineasTextFooter{
+    margin-top: 1rem;
+    display: flex;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-family: KnockoutBig;
+    font-size: 9rem;
+    color: black;
+    text-transform: uppercase;
+}
+.lineasText p{
+    position: relative;
+    animation: movimientoKB 35s linear infinite;
+}
+.lineasTextFooter span{
+    color: white;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+/* COPYRIGHT */
+#copyright{
+    display: flex;
+    justify-content: space-around;
+    font-family: Knockout;
+    font-size: .875rem;
+    color: black;
+    padding: 2rem 0 5rem 0;
+}
+.enlacesCopy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: .5rem;
+}
+.enlacesCopy p{
+    transform: translateY(-3px);
+}
+#copyright a{
+    text-decoration: none;
+    color: black;
+}
+#copyright > div > p > span{
+    font-family: KnockoutBig;
+}
+.top{
+    display: flex;
+    font-family: KnockoutBig;
+    text-transform: uppercase;
+    gap: .5rem;
+}
+.circle{
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+.transicionP{
+    border: 1px solid red;
+    overflow: hidden;
+}
+.transicionP > p{
+    transform: translateY(-12px);
+}
+#copyright > a:hover{
+    .circle{
+        background-color: transparent;
+        border-radius: 100%;
+    }
+}
 /* ANIMACIONES */
 @keyframes movimientoKB{
     0%{
