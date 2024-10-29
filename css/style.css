@@ -785,8 +785,44 @@ header > div > div:last-child > a:first-child:hover{
 }
 #caeComida > div:nth-child(1){
     display: flex;
+    position: absolute;filter: drop-shadow(0 0 220px rgb(0, 0, 0)) drop-shadow(0 0 220px rgb(0, 0, 0)) drop-shadow(0 0 220px rgb(0, 0, 0)) drop-shadow(0 0 220px rgb(0, 0, 0)) ;
+
+    view-timeline: --efecto block;
+    animation-timeline: --efecto;
+    animation-name: caecomidaDiv;
+    animation-range: entry 0% cover 100%;
+    animation-fill-mode: both;
+}
+.caeBurger{
+    filter: drop-shadow(0 0 20px rgb(0, 0, 0)) drop-shadow(0 0 20px rgb(0, 0, 0));
+    z-index: 446;
     position: absolute;
-    display: none;
+    view-timeline: --efecto block;
+    animation-timeline: --efecto;
+    animation-name: caecomidaBurger;
+    animation-range: entry 0% cover 100%;
+    animation-fill-mode: both;
+}
+.caePan{
+    filter: drop-shadow(0 0 20px rgb(0, 0, 0)) drop-shadow(0 0 20px rgb(0, 0, 0));
+    z-index: 445;
+    position: absolute;
+    view-timeline: --efecto block;
+    animation-timeline: --efecto;
+    animation-name: caecomidaPan;
+    animation-range: entry 0% cover 100%;
+    animation-fill-mode: both;
+}
+.caeSalsa{
+    filter: drop-shadow(0 0 20px rgb(0, 0, 0)) drop-shadow(0 0 20px rgb(0, 0, 0));
+    position: absolute;
+    z-index: 444;
+    width: 220px;
+    view-timeline: --efecto block;
+    animation-timeline: --efecto;
+    animation-name: caecomidaSalsa;
+    animation-range: entry 0% cover 60%;
+    animation-fill-mode: both;
 }
 #caeComida > div:nth-child(2){
     display: flex;
@@ -1108,5 +1144,38 @@ footer > section > div > div:nth-child(3) > a:hover{
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@keyframes caecomidaDiv{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(950px);
+    }
+}
+@keyframes caecomidaBurger{
+    0%{
+        transform: translateY(20px) rotate(-45deg);
+    }
+    100%{
+        transform: translateY(400px) rotate(35deg);
+    }
+}
+@keyframes caecomidaPan{
+    0%{
+        transform: translateY(0px) translateX(100px);
+    }
+    100%{
+        transform: translateY(200px) translateX(400px) rotate(45deg);
+    }
+}
+@keyframes caecomidaSalsa{
+    0%{
+        transform:  rotate(0deg);
+    }
+    100%{
+        transform: rotate(-45deg);
     }
 }
