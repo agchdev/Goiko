@@ -1105,6 +1105,7 @@ footer{
 }
 /* RESPONSIVE 1200px */
 @media (max-width: 1200px){
+    /* HEADER CAMBIOS */
     header > div > div:first-child > svg:first-child{
         width: 45%;
     }
@@ -1113,6 +1114,25 @@ footer{
     }
     .enlaces{
         width: 50% !important;
+    }
+
+    /* SCROLL HORIZONTAL */
+    #scrollHC > div > div > article > div:nth-child(1){
+        width: 450px;
+        height: 450px;
+    }
+
+    /* SECCION DE CONTADOR */
+    #contador > h3 {
+        font-size: 2.5rem;
+    }
+    #contador > div > div > img{
+        width: 80px;
+    }
+
+    /* TRUCK */
+    #truck > div > div > div > h3 {
+        font-size: 3rem;
     }
 }
 
