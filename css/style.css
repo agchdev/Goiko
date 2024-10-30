@@ -253,6 +253,21 @@ button.idioma:last-child{
     border-radius: 50%;
     padding: 1rem;
 }
+
+.flecha{
+    fill: #fff;
+}
+.reservarGiro > svg:nth-child(1){
+    width: 300px;
+    animation: rotacion 5s linear infinite;
+}
+.reservarGiro > svg:nth-child(2){
+    position: absolute;
+    width: 80px;
+    transform-origin: top right;
+    transform: scale(1);
+    transition: all .5s cubic-bezier(0.78, 0, 0.13, 1);
+}
 .reservarGiro:hover{
     background-color: white;
     .filled {
@@ -265,17 +280,9 @@ button.idioma:last-child{
     .flecha{
         fill: #ee2737 !important;
     }
-}
-.flecha{
-    fill: #fff;
-}
-.reservarGiro > svg:nth-child(1){
-    width: 300px;
-    animation: rotacion 5s linear infinite;
-}
-.reservarGiro > svg:nth-child(2){
-    position: absolute;
-    width: 80px;
+    svg:nth-child(2){
+        transform: scale(0);
+    }
 }
 .filled {
     fill: #fff;
@@ -1105,6 +1112,29 @@ footer{
 }
 /* RESPONSIVE 1200px */
 @media (max-width: 1200px){
+    /* MENU */
+    #cerrarMenu{
+        width: 100px;
+        height: 100px;
+    }
+    .textGrandes{
+        font-size: 4.5rem;
+    }
+    .textMedianos{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-top: 250px;
+    }
+    .textMedianos > div{
+        width: 100%;
+        gap: 0 !important;
+    }
+    .textMedianos > div > a{
+        width: 100%;
+        font-size: 1.125rem;
+        margin-bottom: .5rem;
+    }
     /* HEADER CAMBIOS */
     header > div > div:first-child > svg:first-child{
         width: 45%;
