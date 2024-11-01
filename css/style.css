@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 @font-face {
     font-family: Knockout;
     src: url('../font/Knockout-HTF33-JuniorHeviwt.291432cdf9638ce91c1d.woff2');
@@ -7,7 +9,6 @@
     src: url('../font/Knockout-HTF73-FullHeviweight.386a901fd564bd4a47c7.woff2');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 /* <uniquifier>: Use a unique and descriptive class name
    <weight>: Use a value from 200 to 1000 */
    
