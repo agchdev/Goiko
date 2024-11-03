@@ -701,6 +701,7 @@ header > div > div:last-child > a:first-child:hover{
     align-items: center;
     padding: 10rem 0;
     border-radius: 2rem;
+    gap: 3rem;
 
     background: rgb(151,29,39);
     background: -moz-linear-gradient(90deg, rgba(151,29,39,1) 24%, rgba(0,0,0,1) 100%);
@@ -732,6 +733,9 @@ header > div > div:last-child > a:first-child:hover{
 }
 #bgmoneda > div:nth-child(2) > div{
     width: 25%;
+}
+#bgmoneda > div > img{
+    width: 90%;
 }
 .elc{
     display: inline-block;
@@ -1159,6 +1163,14 @@ footer{
     }
     #contador > div > div > img{
         width: 80px;
+    }
+    /* MONEDA */
+    #bgmoneda > div:nth-child(2){
+        width: 37%;
+    }
+    #bgmoneda > div:nth-child(2) > h3{
+        font-size: 3rem !important;
+        line-height: 2.75rem;
     }
 
     /* TRUCK */
