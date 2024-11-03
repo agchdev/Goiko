@@ -1248,12 +1248,56 @@ footer{
     }
 
     /* HEADER */
+    
     .idiomas{
         display: none;
     }
     .hidden{
         font-size: 12px;
         height: 10px;
+    }
+    header > div > div:last-child {
+        width: 40% !important;
+    }
+    header > div > div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+    }
+
+    /* MONEDA */
+
+    #bgmoneda {
+        flex-direction: column;
+    }
+    .elc {
+        width: 80vw;
+        text-align: center;
+    }
+    #bgmoneda > div:nth-child(2) {
+        width: 90%;
+    }
+
+    #bgmoneda > div:nth-child(2) > p {
+        font-size: 1rem;
+        line-height: 1.375rem;
+    }
+
+    #bgmoneda {
+        padding-bottom: 3rem !important;
+    }
+
+    /* FOODSTRUCK */
+
+    #truck > div > div > div > h3 {
+        font-size: 2.25rem;
+        line-height: 2.125rem;
+        height: auto;
+    }
+    #truck > div > div > p {
+        font-size: 1rem;
+        line-height: 1.375rem;
     }
 
     /* FOOTER */
