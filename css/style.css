@@ -1247,8 +1247,17 @@ footer{
         margin-bottom: .5rem;
     }
 
+    /* HEADER */
+    .idiomas{
+        display: none;
+    }
+    .hidden{
+        font-size: 12px;
+        height: 10px;
+    }
+
     /* FOOTER */
-    
+
     .full__logo{
         width: 50px !important;
         margin-bottom: 2rem;
