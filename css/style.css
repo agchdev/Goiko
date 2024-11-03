@@ -1224,6 +1224,21 @@ footer{
 @media (max-width: 768px){
 
     /* MENU */
+    .idioGiro {
+        justify-content: end;
+    }
+    .mhb > div:first-child > svg {
+        display: none;
+    }
+    .textGrandes{
+        margin-top: 150px;
+    }
+    .textGrandes > a {
+        font-size: 2rem;
+    }
+    .textGrandes > a:hover {
+        -webkit-text-stroke: 2px white;
+    }
     #cerrarMenu{
         width: 100px;
         height: 100px;
