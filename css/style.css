@@ -1222,6 +1222,33 @@ footer{
 
 /* RESPONSIVE 768px */
 @media (max-width: 768px){
+
+    /* MENU */
+    #cerrarMenu{
+        width: 100px;
+        height: 100px;
+    }
+    .textGrandes{
+        font-size: 4.5rem;
+    }
+    .textMedianos{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-top: 250px;
+    }
+    .textMedianos > div{
+        width: 100%;
+        gap: 0 !important;
+    }
+    .textMedianos > div > a{
+        width: 100%;
+        font-size: 1.125rem;
+        margin-bottom: .5rem;
+    }
+
+    /* FOOTER */
+    
     .full__logo{
         width: 50px !important;
         margin-bottom: 2rem;
@@ -1251,7 +1278,29 @@ footer{
     /* COPYRIGHT */
 
     #copyright{
+        flex-direction: column-reverse;
+    }
+
+    #copyright > div:nth-child(2){
         flex-direction: column;
+        align-items: start !important;
+        justify-content: start !important;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    #copyright > div:nth-child(1){
+        flex-direction: column;
+        align-items: start !important;
+        justify-content: start !important;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    #copyright > div:nth-child(3){
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    #copyright > div:nth-child(2) > p{
+        display: none;
     }
 }
 
