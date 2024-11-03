@@ -1201,12 +1201,24 @@ footer{
 
     /* FOOTER ENLACES */
     #enlacesFooter > div:nth-child(2){
-        width: 400px !important;
+        width: 200px !important    
     }
     #enlacesFooter > div:nth-child(2) > a{
-        width: 30px !important;
-        height: 30px !important;
+        width: 15px !important;
+        height: 15px !important;
     }
+    #enlacesFooter > div:nth-child(1) > div:nth-child(2) > a{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    #enlacesFooter > div:nth-child(1) > div:nth-child(3) > a{
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+}
+
+/* RESPONSIVE 1200px */
+@media (max-width: 768px){
 }
 
 /* ANIMACIONES */
