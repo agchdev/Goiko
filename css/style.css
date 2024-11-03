@@ -1200,6 +1200,9 @@ footer{
     }
 
     /* FOOTER ENLACES */
+    .full__logo{
+        width: 100px !important;
+    }
     #enlacesFooter > div:nth-child(2){
         width: 200px !important    
     }
@@ -1217,8 +1220,39 @@ footer{
     }
 }
 
-/* RESPONSIVE 1200px */
+/* RESPONSIVE 768px */
 @media (max-width: 768px){
+    .full__logo{
+        width: 50px !important;
+        margin-bottom: 2rem;
+    }
+    #enlacesFooter > div:nth-child(1){
+        flex-direction: column;
+    }
+    #enlacesFooter > div:nth-child(1) > div:nth-child(2){   
+        margin-bottom: 2rem;
+    }
+    #enlacesFooter > div:nth-child(1) > div:nth-child(2) > a{
+        font-size: 2rem;
+        line-height: 2.25rem;
+        margin-left: 2rem;
+    }
+    #enlacesFooter > div:nth-child(1) > div:nth-child(3) > a{   
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-left: 2rem;
+    }
+
+    /* FOOTER FOREVER CHORREO */
+
+    .lineasTextFooter{
+        font-size: 3.5rem;
+    }
+    /* COPYRIGHT */
+
+    #copyright{
+        flex-direction: column;
+    }
 }
 
 /* ANIMACIONES */
