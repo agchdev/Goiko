@@ -1151,6 +1151,24 @@ footer{
         width: 50% !important;
     }
 
+    /* LOOP */
+
+    .text-back {
+        font-size: 7rem;
+    }
+    .text-back:nth-child(2){
+        top: 30% !important;
+    }
+    .text-back:nth-child(3){
+        top: 40% !important;
+    }
+    .text-back:nth-child(4){
+        top: 50% !important;
+    }
+    .text-back:nth-child(5){
+        top: 60% !important;
+    }
+
     /* SCROLL HORIZONTAL */
     #scrollHC > div > div > article > div:nth-child(1){
         width: 450px;
@@ -1242,6 +1260,20 @@ footer{
     .textMedianos{
         margin-top: 50px !important;
     }
+    .enlacesMenu{
+        flex-direction: column;
+        justify-content: end;
+    }
+    .enlacesMenu > a {
+        width: 20px;
+        height: 20px;
+    }
+    .reservarGiro{
+        width: 60%;
+    }
+    .reservarGiro > svg:nth-child(2) {
+        width: 40px;
+    }
     #cerrarMenu{
         width: 100px;
         height: 100px;
@@ -1263,6 +1295,23 @@ footer{
         width: 100%;
         font-size: 1.125rem;
         margin-bottom: .5rem;
+    }
+    /* LOOP */
+
+    .text-back {
+        font-size: 6rem;
+    }
+    .text-back:nth-child(2){
+        top: 18% !important;
+    }
+    .text-back:nth-child(3){
+        top: 26% !important;
+    }
+    .text-back:nth-child(4){
+        top: 34% !important;
+    }
+    .text-back:nth-child(5){
+        top: 42% !important;
     }
 
     /* HEADER */
@@ -1350,6 +1399,27 @@ footer{
         width: 150px;
     }
 
+    /* NOTICIAS */
+    #noticias {
+        flex-direction: column;
+    }
+    #noticias > div:nth-child(2) {
+        margin-bottom: 5rem;
+    }
+    #noticias > div:nth-child(1) {
+        flex-direction: column;
+    }
+    #noticias > div:nth-child(1) > article > img {
+        width: 100%;
+        height: 400px;
+    }
+    #noticias > div:nth-child(2) > a > div {
+        height: 13px;
+    }
+    #noticias > div:nth-child(1) > article {
+        justify-content: start;
+        width: 100%;
+    }
     /* LINEAS TEXT */
 
     .lineasText {
