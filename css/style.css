@@ -1184,7 +1184,29 @@ footer{
     }
     
     /* NOTICIAS */
+    #noticias > div:nth-child(1) > article{
+        width: 33%;
+    }
+    #noticias > div:nth-child(1) > article > img{
+        width: 350px;
+        height: 300px;
+    }
+    #noticias > div:nth-child(1) > article > h3{
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    #noticias > div:nth-child(1) > article > p{
+        font-size: .8rem;
+    }
 
+    /* FOOTER ENLACES */
+    #enlacesFooter > div:nth-child(2){
+        width: 400px !important;
+    }
+    #enlacesFooter > div:nth-child(2) > a{
+        width: 30px !important;
+        height: 30px !important;
+    }
 }
 
 /* ANIMACIONES */
