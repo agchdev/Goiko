@@ -1237,7 +1237,10 @@ footer{
         font-size: 2rem;
     }
     .textGrandes > a:hover {
-        -webkit-text-stroke: 2px white;
+        -webkit-text-stroke: 1px white;
+    }
+    .textMedianos{
+        margin-top: 50px !important;
     }
     #cerrarMenu{
         width: 100px;
