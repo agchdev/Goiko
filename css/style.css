@@ -84,6 +84,7 @@ body{
     display: flex !important;
     animation: ocultar 1s cubic-bezier(0.78, 0, 0.13, 1);
 } 
+
 #cerrarMenu{
     width: 150px;
     height: 150px;
@@ -366,6 +367,9 @@ header > div > div:last-child > a:nth-child(2):hover{
 header > div > div:last-child > a:first-child:hover{
     background-color: white;
     color: black;
+}
+header > div > div:last-child {
+    width: 30%;
 }
 .animHover{
     animation: enlaces .4s ease-out both;
